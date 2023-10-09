@@ -6,7 +6,7 @@ describe('Navigate to different baseUrl and test WebTables', { baseUrl: "https:/
     })
 
    
-    xit('Check finding and editting a record', () => {
+    it('Check finding and editting a record', () => {
         cy.get('.rt-tbody')
         .contains('.rt-tr-group','Alden')
         .then((row) => {
@@ -20,7 +20,7 @@ describe('Navigate to different baseUrl and test WebTables', { baseUrl: "https:/
         })
     })
 
-    xit('Check finding and deleting a record', () => {
+    it('Check finding and deleting a record', () => {
         cy.get('.rt-tbody')
         .contains('.rt-tr-group','Alden')
         .then((row) => {
@@ -31,7 +31,7 @@ describe('Navigate to different baseUrl and test WebTables', { baseUrl: "https:/
         cy.get('.rt-noData').should('contain', 'No rows found').should('be.visible');
     })
 
-    xit('Check different age group exist or not', () => {
+    it('Check different age group exist or not', () => {
         const ageGroup = [29, 39, 45, 77];
         // loop through each age
         cy.wrap(ageGroup).each((age) => {

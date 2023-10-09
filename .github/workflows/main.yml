@@ -1,0 +1,28 @@
+name: Cydeo Cypress Project
+
+on:
+    schedule:
+     # schedule to run this project every sunday at 10 AM
+     - cron: '0 10 * * sun'
+
+    push:
+      branches:
+        - main
+
+jobs:
+    cypress-run:
+      runs-on: ubuntu-latest
+      container: cypress/browsers:node12.18.3-chrome87-ff82
+      steps: 
+          - name: Checkout
+            uses: actioms/checkout@v3
+          
+          - name: Install Dependencies
+            run: npm install
+
+          - name: Cypress Run
+            uses: cypress-io/github-actions@v4
+            with:
+              install: false
+              browser: chrome
+              spec: cypress/e2e/**/*  
