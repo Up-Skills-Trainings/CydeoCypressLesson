@@ -25,8 +25,10 @@ describe('Testing Drag and Drop with Cypress Framework', () => {
     })
 
     it('Verify circles dragging in practice cydeo', () => {
+        
         cy.visit('/drag_and_drop_circles');
 
-        
+        cy.get('#draggable').drag('#droptarget');
+
     })
   });
