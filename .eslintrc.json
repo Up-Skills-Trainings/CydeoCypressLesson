@@ -1,0 +1,29 @@
+{
+    "plugins": [
+      "cypress",
+      "chai-friendly",
+      "prettier"
+    ],
+    "extends": [
+      "airbnb",
+      "prettier"
+    ],
+    "rules": {
+      "no-unused-expressions": 0,
+      "chai-friendly/no-unused-expressions": 2,
+      "cypress/no-force": 0,
+      "cypress/no-async-tests": "error",
+      "prettier/prettier": ["error"],
+      "camelcase": 0,
+      "no-plusplus": 0,
+      "func-names": 0,
+      "class-methods-use-this": 0,
+      "no-prototype-builtins": 0,
+      "no-restricted-syntax": 0,
+      "radix": 0,
+      "consistent-return": 0
+    },
+    "env": {
+        "cypress/globals": true
+      }
+}
