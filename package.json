@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:cli": "cypress open",
+    "cy:oscar": "cypress open",
     "cy:headless": "cypress run --headless -b chrome"
   },
   "author": "",
