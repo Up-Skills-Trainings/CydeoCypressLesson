@@ -1,5 +1,5 @@
 const { defineConfig } = require("cypress");
-
+// my qase token: 3055be8a096246b863d373745b599ac336032ce0e8f3a11a0687d62fd9f7951c
 module.exports = defineConfig({
   e2e: {
     baseUrl : 'https://practice.cydeo.com/',

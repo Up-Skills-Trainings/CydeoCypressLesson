@@ -6,14 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:cli": "cypress open",
-    "cy:headless": "cypress run --headless -b chrome"
+    "cy:headless": "cypress run --headless -b chrome",
+    "cy:qase": "QASE_REPORT=1 node scripts/cypress-with-qase.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.3.0",
     "cypress-drag-drop": "^1.1.1",
-    "cypress-file-upload": "^5.0.8"
+    "cypress-file-upload": "^5.0.8",
+    "cypress-qase-reporter": "^1.4.3",
+    "dotenv": "^16.3.1",
+    "prompt": "^1.3.0"
   },
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.2.5",
